@@ -62,3 +62,10 @@ export type TButtonProps = {
   label: string;
   icon?: string;
 } & ButtonHTMLAttributes<HTMLButtonElement>;
+
+// Shoecard Pop type
+export type TShoeCardProps = {
+  img: string,
+  changeBigShoeImg: (changed: string) => void,
+  bigShoeImg: string
+}
