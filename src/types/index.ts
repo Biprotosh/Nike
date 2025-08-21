@@ -1,37 +1,39 @@
+import type { ButtonHTMLAttributes, ElementType, ReactNode } from "react";
+
 // Navigation
-export type  NavLink = {
+export type TNavLink = {
   href: string;
   label: string;
 }
 
 // Shoes
-export type  Shoe = {
+export type TShoe = {
   thumbnail: string;
   bigShoe: string;
 }
 
 // Statistics
-export type  Statistic = {
+export type TStatistic = {
   value: string;
   label: string;
 }
 
 // Products
-export type  Product = {
+export type TProduct = {
   imgURL: string;
   name: string;
   price: string;
 }
 
 // Services
-export type  Service = {
+export type TService = {
   imgURL: string;
   label: string;
   subtext: string;
 }
 
 // Reviews
-export type  Review = {
+export type TReview = {
   imgURL: string;
   customerName: string;
   rating: number;
@@ -39,18 +41,24 @@ export type  Review = {
 }
 
 // Footer
-export type  FooterLinkItem = {
+export type TFooterLinkItem = {
   name: string;
   link: string;
 }
 
-export type  FooterSection = {
+export type TFooterSection = {
   title: string;
-  links: FooterLinkItem[];
+  links: TFooterLinkItem[];
 }
 
 // Social media
-export type  SocialMedia = {
+export type TSocialMedia = {
   src: string;
   alt: string;
 }
+
+// Button Component
+export type TButtonProps = {
+  label: string;
+  icon?: string;
+} & ButtonHTMLAttributes<HTMLButtonElement>;
