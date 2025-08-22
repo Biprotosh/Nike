@@ -61,6 +61,9 @@ export type TSocialMedia = {
 export type TButtonProps = {
   label: string;
   icon?: string;
+  backgroundColor?: string;
+  borderColor?: string;
+  textColor?: string
 } & ButtonHTMLAttributes<HTMLButtonElement>;
 
 // Shoecard Pop type
