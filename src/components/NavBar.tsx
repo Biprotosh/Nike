@@ -9,10 +9,10 @@ const NavBar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <header className="padding-x py-8 w-full fixed z-100 bg-white">
+        <header className="padding-x py-4 w-full fixed z-100 bg-white">
             <nav className="flex items-center justify-between max-container">
                 <a href="/">
-                    <img src={headerLogo} alt="logo" width={130} height={29} />
+                    <img src={headerLogo} alt="logo" width={120} height={29} className="mt-2 sm:mt-0"/>
                 </a>
                 <ul className="flex flex-1 items-center justify-center gap-16 max-lg:hidden">
                     {navLinks.map(({ href, label }) => (
